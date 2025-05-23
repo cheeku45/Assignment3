@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <div id="errors" class="message-box error-box"></div>
+    <div id="success" class="message-box success-box"></div>
+
+    <form id="registrationForm" class="wrapper">
+        <div class="formelement">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email" required />
+        </div>
+
+        <div class="formelement">
+            <label for="phoneno">Phone Number</label>
+            <input type="text" id="phoneno" name="phoneno" maxlength="10" required />
+        </div>
+
+        <div class="formelement">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <button type="button" class="toggle-password" data-target="password">Show</button>
+        </div>
+
+        <div class="formelement">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required />
+            <button type="button" class="toggle-password" data-target="confirmpassword">Show</button>
+        </div>
+
+        <input type="submit" id="submitbutton" value="Register" />
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
